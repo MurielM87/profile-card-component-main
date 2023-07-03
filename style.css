@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Kumbh sans", sans-serif;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+    background: hsl(185, 75%, 39%);
+}
+main {
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: -90% -500px, 170% 400px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: hsl(0, 0%, 100%);
+    text-align: center;
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 100px 0;
+}
+.card {
+    height: 150px;
+    width: 350px;
+    background: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+}
+.img_profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid hsl(0, 0%, 100%);
+}
+.img_profil img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.card_text {
+    margin-top: 54px;
+    margin-bottom: -75px;
+    height: 250px;
+    line-height: 1.8rem;
+}
+.card_text .name {
+    font-size: 1.4rem;
+}
+.card_text .city {
+    margin-top: 10px;
+}
+.card_text .age,
+.card_text .city {
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 59%);
+}
+.activity_card .act {
+    display: block;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.1rem;
+}
+.activity_card {
+    padding-top: 22px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-top: 1px solid hsl(0, 10%, 88%);
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.attribution {
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        background-position: 120% -500px, -15% 400px;
+    }
+    .container {
+        width: 90%;
+        margin: 200px 0;
+    }
+}
